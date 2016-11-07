@@ -259,4 +259,3 @@ module Invoicexpress
 
   end
 end
-
