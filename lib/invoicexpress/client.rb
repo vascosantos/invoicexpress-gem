@@ -18,6 +18,7 @@ require 'invoicexpress/client/debit_notes'
 require 'invoicexpress/client/credit_notes'
 require 'invoicexpress/client/simplified_invoices'
 require 'invoicexpress/client/invoice_receipts'
+require 'invoicexpress/client/pdfs'
 
 
 module Invoicexpress
