@@ -54,5 +54,6 @@ module Invoicexpress
     include Invoicexpress::Client::SimplifiedInvoices
     include Invoicexpress::Client::InvoiceReceipts
 
+    include Invoicexpress::Client::PDFs
   end
 end

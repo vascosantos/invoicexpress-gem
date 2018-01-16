@@ -3,7 +3,7 @@ require 'invoicexpress/models/client'
 module Invoicexpress
   module Models
 
-    class PDFUrl < BaseModel
+    class PDF < BaseModel
       include HappyMapper
 
       tag 'output'

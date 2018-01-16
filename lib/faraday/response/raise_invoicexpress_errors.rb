@@ -5,6 +5,7 @@ module Faraday
   class Response::RaiseInvoicexpressErrors < Response::Middleware
     ERROR_MAP = {
       401 => Invoicexpress::Unauthorized,
+      406 => Invoicexpress::NotAcceptable,
       422 => Invoicexpress::UnprocessableEntity,
       500 => Invoicexpress::InternalServerError,
     }

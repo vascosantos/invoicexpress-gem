@@ -60,6 +60,9 @@ module Invoicexpress
   # Raised when Invoicexpress returns a 404 HTTP status code
   class NotFound < Error; end
 
+  # Raised when Invoicexpress returns a 406 HTTP status code
+  class NotAcceptable < Error; end
+
   # Raised when Invoicexpress returns a 422 HTTP status code
   class UnprocessableEntity < Error; end
 
