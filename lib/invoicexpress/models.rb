@@ -26,4 +26,5 @@ require 'invoicexpress/models/quarterly_result'
 require 'invoicexpress/models/schedule'
 require 'invoicexpress/models/purchase_order'
 require 'invoicexpress/models/supplier'
+require 'invoicexpress/models/pdf'
 

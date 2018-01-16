@@ -2,7 +2,7 @@ require 'invoicexpress/models'
 
 module Invoicexpress
   class Client
-    module PDFs
+    module PDF
 
       # retrieve PDF url for given Invoice id
       # NOTE: this function does not retry when the PDF is still being generated
