@@ -103,10 +103,10 @@ module Invoicexpress
       # @raise Invoicexpress::Unauthorized When the client is unauthorized
       # @raise Invoicexpress::UnprocessableEntity When there are errors on the submission
       # @raise Invoicexpress::NotFound When the simplified invoice doesn't exist
-      def update_invoice_receipt_state(invoice_receipt_id, simplified_invoice_state, options={})
-        raise(ArgumentError, "invoice receipt state has the wrong type") unless simplified_invoice_state.is_a?(Invoicexpress::Models::InvoiceState)
+      def update_invoice_receipt_state(invoice_receipt_id, invoice_receipt_state, options={})
+        raise(ArgumentError, "invoice receipt state has the wrong type") unless invoice_receipt_state.is_a?(Invoicexpress::Models::InvoiceState)
 
-        params = { :klass => Invoicexpress::Models::InvoiceReceipt, :body => simplified_invoice_state }
+        params = { :klass => Invoicexpress::Models::InvoiceReceipt, :body => invoice_receipt_state }
         put("invoice_receipts/#{invoice_receipt_id}/change-state.xml", params.merge(options))
       end
 
