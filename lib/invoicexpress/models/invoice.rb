@@ -3,6 +3,13 @@ require 'invoicexpress/models/client'
 module Invoicexpress
   module Models
 
+    class PDFUrl < BaseModel
+      include HappyMapper
+
+      tag 'output'
+      element :pdfUrl, String
+    end
+
     class Tax < BaseModel
       include HappyMapper
 
